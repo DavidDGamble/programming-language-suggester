@@ -28,15 +28,17 @@ function handleSubmit(event) {
   if (isNaN(q4) === true) {
     document.getElementById('suggestion').innerText = 'Please enter a number in the classes/courses taken input.'; 
     const display = document.getElementById('suggestion');
-    display.style.color = 'red';
+    display.style.backgroundColor = 'red';
+    display.style.color = 'rgb(200, 101, 20)';
   } else if (q5 === 'Select option') {
     document.getElementById('suggestion').innerText = 'Please select which option best describes you in dropdown.'; 
-    const display = document.getElementById('suggestion');
-    display.style.color = 'red';
+    display.style.backgroundColor = 'red';
+    display.style.color = 'rgb(200, 101, 20)';
   } else {
     const suggestion = suggester(q1, q2, q3, q4, q5);
     document.getElementById('suggestion').innerText = 'We think you should consider learning ' + suggestion + '.'; 
     const display = document.getElementById('suggestion');
+    display.style.backgroundColor = 'green';
     display.style.color = 'yellow';
   }
 }

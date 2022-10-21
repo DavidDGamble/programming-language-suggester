@@ -7,63 +7,65 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Programming Language Suggester</h1>
-			<p class="lead">Fill out the form below to see which programming languages you should learn!</p>
+	<div class="container">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Programming Language Suggester</h1>
+				<p class="lead">Fill out the form below to see which programming languages you should learn!</p>
+			</div>
 		</div>
+
+		<!-- <h1>Programming Language Suggester</h1>
+		<h2>Fill out the form below to see which programming languages you should learn!</h2> -->
+
+
+		<form class="form">
+			<!-- do you prefer math or writing? -->
+			<p>Which do you prefer?</p>
+			<label>
+				<input type="radio" name="q1" value="math" checked>
+				Math
+			</label>
+			<label>
+				<input type="radio" name="q1" value="writing">
+				Writing
+			</label>
+			<!-- do you like to problem solve? -->
+			<p>Do you like to problem solve?</p>
+			<label>
+				<input type="radio" name="q2" value="yes" checked>
+				Yes
+			</label>
+			<label>
+				<input type="radio" name="q2" value="no">
+				No
+			</label>
+			<!-- do you prefer front end or back end developement? -->
+			<p>Do you prefer front-end or back-end developement?</p>
+			<label>
+				<input type="radio" name="q3" value="front" checked>
+				Front-end
+			</label>
+			<label>
+				<input type="radio" name="q3" value="back">
+				Back-end
+			</label><br><br>
+			<!-- how many previous course/classes have you taken? -->
+			<label for="q4">How many courses/classes have you taken?</label><br><br>
+			<input id="q4" type="text">
+			<!-- choose which option best describes you. -->
+			<p>Which option best describes you?</p>
+			<select id="q5">
+				<option>Select option</option>
+				<option>Creative</option>
+				<option>Logical</option>
+				<option>Thorough</option>
+				<option>Well-rounded</option>
+			</select><br><br>
+
+			<button type="submit">Submit</button>
+		</form>
+		<h2 class="hidden" id="suggestion"></h2>
 	</div>
-
-  <!-- <h1>Programming Language Suggester</h1>
-	<h2>Fill out the form below to see which programming languages you should learn!</h2> -->
-
-
-	<form>
-		<!-- do you prefer math or writing? -->
-		<p>Which do you prefer?</p>
-		<label>
-			<input type="radio" name="q1" value="math" checked>
-			Math
-		</label>
-		<label>
-			<input type="radio" name="q1" value="writing">
-			Writing
-		</label>
-		<!-- do you like to problem solve? -->
-		<p>Do you like to problem solve?</p>
-		<label>
-			<input type="radio" name="q2" value="yes" checked>
-			Yes
-		</label>
-		<label>
-			<input type="radio" name="q2" value="no">
-			No
-		</label>
-		<!-- do you prefer front end or back end developement? -->
-		<p>Do you prefer front-end or back-end developement?</p>
-		<label>
-			<input type="radio" name="q3" value="front" checked>
-			Front-end
-		</label>
-		<label>
-			<input type="radio" name="q3" value="back">
-			Back-end
-		</label><br><br>
-		<!-- how many previous course/classes have you taken? -->
-		<label for="q4">How many courses/classes have you taken?</label><br><br>
-		<input id="q4" type="text">
-		<!-- choose which option best describes you. -->
-		<p>Which option best describes you?</p>
-		<select id="q5">
-			<option>Select option</option>
-			<option>Creative</option>
-			<option>Logical</option>
-			<option>Thorough</option>
-			<option>Well-rounded</option>
-		</select><br><br>
-
-		<button type="submit">Submit</button>
-	</form>
-	<h2 id="suggestion"></h2>
 </body>
 </html>

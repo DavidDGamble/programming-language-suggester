@@ -2,6 +2,25 @@ body {
   background-color: black;
   text-align: center;
 }
-form {
-  color:aquamarine;
+.form {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  border: solid rgb(14, 96, 77);
+  border-width: 5px;
+  background-color: black;
+  color: aquamarine;
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+h2 {
+  margin: auto;
+  width: auto;
+  height: auto;
+  background-color: red;
+  color: rgb(200, 101, 20);
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
