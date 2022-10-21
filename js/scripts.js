@@ -22,7 +22,13 @@ function handleSubmit(event) {
   const q3 = document.querySelector("input[name='q3']:checked").value;;
   const q4 = parseInt(document.querySelector('input#q4').value);
   const q5 = document.querySelector('select#q5').value;
-  const suggestion = suggester(q1, q2, q3, q4, q5)
-
-  document.getElementById('suggestion').innerText = 'We think you should consider learning ' + suggestion + '.'; 
+  
+  if (isNaN(q4) === true) {
+    document.getElementById('suggestion').innerText = 'Please enter a number in the classes/courses taken input.'; 
+  } else if (q5 === 'Select option') {
+    document.getElementById('suggestion').innerText = 'Please select which option best describes you in dropdown.'; 
+  } else {
+    const suggestion = suggester(q1, q2, q3, q4, q5);
+    document.getElementById('suggestion').innerText = 'We think you should consider learning ' + suggestion + '.'; 
+  }
 }
