@@ -2,7 +2,7 @@
 
 #### By _**David Gamble**_
 
-#### _Suggests languages for the user to learn based on their input._
+#### _Suggest a language for the user to learn based on their input._
 
 ## Technologies Used
 

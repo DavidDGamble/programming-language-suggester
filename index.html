@@ -11,17 +11,11 @@
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<h1 class="display-4">Programming Language Suggester</h1>
-				<p class="lead">Fill out the form below to see which programming languages you should learn!</p>
+				<p class="lead">Fill out the form below to see which programming language you should learn!</p>
 			</div>
 		</div>
-
-		<!-- <h1>Programming Language Suggester</h1>
-		<h2>Fill out the form below to see which programming languages you should learn!</h2> -->
-
-
 		<form class="form">
-			<!-- do you prefer math or writing? -->
-			<p>Which do you prefer?</p>
+			<p><strong>Which do you prefer?</strong></p>
 			<label>
 				<input type="radio" name="q1" value="math" checked>
 				Math
@@ -30,8 +24,7 @@
 				<input type="radio" name="q1" value="writing">
 				Writing
 			</label>
-			<!-- do you like to problem solve? -->
-			<p>Do you like to problem solve?</p>
+			<p><strong>Do you like to problem solve?</strong></p>
 			<label>
 				<input type="radio" name="q2" value="yes" checked>
 				Yes
@@ -40,8 +33,7 @@
 				<input type="radio" name="q2" value="no">
 				No
 			</label>
-			<!-- do you prefer front end or back end developement? -->
-			<p>Do you prefer front-end or back-end developement?</p>
+			<p><strong>Do you prefer front-end or back-end developement?</strong></p>
 			<label>
 				<input type="radio" name="q3" value="front" checked>
 				Front-end
@@ -50,11 +42,9 @@
 				<input type="radio" name="q3" value="back">
 				Back-end
 			</label><br><br>
-			<!-- how many previous course/classes have you taken? -->
-			<label for="q4">How many courses/classes have you taken?</label><br><br>
-			<input id="q4" type="text">
-			<!-- choose which option best describes you. -->
-			<p>Which option best describes you?</p>
+			<label for="q4"><strong>How many courses/classes have you taken?</strong></label><br>
+			<input id="q4" type="text"><br><br>
+			<p><strong>Which option best describes you?</strong></p>
 			<select id="q5">
 				<option>Select option</option>
 				<option>Creative</option>
@@ -62,7 +52,6 @@
 				<option>Thorough</option>
 				<option>Well-rounded</option>
 			</select><br><br>
-
 			<button type="submit">Submit</button>
 		</form>
 		<h2 class="hidden" id="suggestion"></h2>
