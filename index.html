@@ -38,9 +38,24 @@
 		<label>
 			<input type="radio" name="q3" value="back">
 			Back-end
-		</label>
+		</label><br><br>
 		<!-- how many previous course/classes have you taken? -->
+		<label for="q4">How many courses/classes have you taken?</label><br><br>
+		<input id="q4" type="text">
 		<!-- choose which option best describes you. -->
+		<p>Which option best describes you?</p>
+		<select id="q5">
+			<option>Select option</option>
+			<option>Creative</option>
+			<option>Logical</option>
+			<option>Thorough</option>
+			<option>Well-rounded</option>
+		</select><br><br>
+
+		<button type="submit">Submit</button>
 	</form>
+	<div class="hidden">
+		<h2 id="suggestion"></h2>
+	</div>
 </body>
 </html>
