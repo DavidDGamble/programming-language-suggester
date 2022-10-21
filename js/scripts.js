@@ -20,8 +20,8 @@ window.addEventListener('load', function() {
 function handleSubmit(event) {
   event.preventDefault();
   const q1 = document.querySelector("input[name='q1']:checked").value;
-  const q2 = document.querySelector("input[name='q2']:checked").value;;
-  const q3 = document.querySelector("input[name='q3']:checked").value;;
+  const q2 = document.querySelector("input[name='q2']:checked").value;
+  const q3 = document.querySelector("input[name='q3']:checked").value;
   const q4 = parseInt(document.querySelector('input#q4').value);
   const q5 = document.querySelector('select#q5').value;
   
