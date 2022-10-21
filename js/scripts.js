@@ -6,6 +6,8 @@ function suggester(input1, input2, input3, input4, input5) {
     return 'Python';
   } else if (input1 === 'math' && input2 === 'no') {
     return 'Ruby';
+  } else {
+    return 'C#';
   }
 }
 

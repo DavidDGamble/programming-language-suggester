@@ -1,5 +1,7 @@
 body {
   background-color: black;
-  color:aquamarine;
   text-align: center;
+}
+form {
+  color:aquamarine;
 }
